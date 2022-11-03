@@ -1,0 +1,22 @@
+{
+  "name": "preentrega2_varaschin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LVaraschin/PreEntrega2_Varaschin.git"
+  },
+  "author": "Luciano Varaschin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LVaraschin/PreEntrega2_Varaschin/issues"
+  },
+  "homepage": "https://github.com/LVaraschin/PreEntrega2_Varaschin#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
