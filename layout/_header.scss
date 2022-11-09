@@ -1,0 +1,18 @@
+
+
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+}
+.logo {
+	cursor: pointer;
+	img {
+		height: 70px;
+		width: auto;
+		transition: all 0.3s;
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+}

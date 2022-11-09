@@ -1,0 +1,83 @@
+@media screen and (min-width: 1700px) {
+    .estanteria {
+        background-image: url(../assets/estanteria.jpeg);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+    }
+    .backfotos{
+        background-color: $color-fotos;
+    }
+    }
+    @media screen and (max-width: 1699px) {
+        
+    .estanteria {
+        background-image: url(../assets/madera.jpeg)
+    }
+    }
+
+
+@media screen and (max-width: 768px){
+    .galeria{
+        @include flex-row-center;
+        padding-left: 20%;
+        padding-right: 15%;
+    }
+    }
+    .galeria {
+        @include flex-row-center;
+        flex-wrap: wrap;
+        padding: 6% 25% 17% 25%;
+    }
+    .flip-card {
+        background-color: transparent;
+        @include sizes(200px,200px);
+        perspective: 1000px;
+    }
+    
+    .flip-card-inner {
+        position: relative;
+        @include sizes(100%,100%);
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    
+
+    .flip-card-front {
+        background-color: transparent;
+        color: black;
+        position: absolute;
+        @include sizes(100%,100%);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .flip-card-back {
+        background-color: $color-fotos;
+        color: rgb(0, 0, 0);
+        transform: rotateY(180deg);
+        justify-content: center;
+        position: absolute;
+        @include sizes(100%,100%);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .flip_card-text{
+        margin-top: 30%;
+    }
+    
+    .flip_card-boton{
+        margin-top: 10px;
+    }
+    
+    .flip_card-img{
+        @include sizes(200px,200px);
+    
+    }

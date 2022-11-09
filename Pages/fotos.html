@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
     <title>Fotos</title>
 </head>
-<body>
+<body class="estanteria backfotos">
   <header>
   <nav class="navbar navbar-expand-md bg-dark navbar-dark header">
     <div class="logo">
@@ -47,96 +47,92 @@
 </header>
 <h1 class="titulos2 titulovino">Vinoteca</h1>
     <section class="galeria">
-      <div class=>
-        <div class="row">
-          <div class="">
-            <div class="card borde card-flip h-60" style="width:200px">
-              <div class="card-front text-white bg-dark">
-                <img class="card-img-top" src="../assets/tardia.jpeg" alt="Card image">
-                <div class="card-body">
-                  <h4 class="card-title">Cosecha Tardia</h4>
-                  <p class="card-text">Some example text.</p>
-                </div>
-              </div>
-                <div class="card-back bg-white">
-                  <div class="card-body">
-                      <h3 class="card-title">Cosecha Tardia</h3>
-                      <p class="card-text"></p>
-                      <a href="#" class="btn btn-outline-secondary">More Info</a>
+ 
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img class="flip_card-img" src="../assets/norton-blanco.png" alt="Avatar">
                   </div>
-                </div>
-            </div>
-          </div>
-              <div class="">
-                <div class="card borde card-flip h-60" style="width:200px">
-                  <div class="card-front text-white bg-dark">
-                    <img class="card-img-top" src="../assets/lotenegro.jpeg" alt="Card image">
-                      <div class="card-body">
-                        <h4 class="card-title">Lote Negro</h4>
-                        <p class="card-text">Some example text.</p>
-                      </div>
-                    </div>
-                  <div class="card-back bg-white">
-                    <div class="card-body">
-                        <h3 class="card-title">Lote Negro</h3>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-outline-secondary">More Info</a>
-                    </div>
+                  <div class="flip-card-back">
+                    <p class="flip_card-text">Norton Clasico</p>
+                    <input class="flip_card-boton" type="button" value="More Info">
                   </div>
                 </div>
               </div>
-
-              <div class=>
-                <div class="card borde card-flip h-60" style="width:200px">
-                  <div class="card-front text-white bg-dark">
-                    <img class="card-img-top" src="../assets/reserva.jpeg" alt="Card image">
-                      <div class="card-body">
-                        <h4 class="card-title">Norton Reserva</h4>
-                        <p class="card-text">Some example text.</p>
-                      </div>
-                    </div>
-                  <div class="card-back bg-white">
-                    <div class="card-body">
-                        <h3 class="card-title">Norton Reserva</h3>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-outline-secondary">More Info</a>
-                    </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img class="flip_card-img" src="../assets/nortoncoleccion.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                    <p class="flip_card-text">Norton Colección</p>
+                    <input class="flip_card-boton" type="button" value="More Info">
                   </div>
                 </div>
               </div>
-              <div class=>
-                <div class="card borde card-flip h-60" style="width:200px">
-                  <div class="card-front text-white bg-dark">
-                    <img class="card-img-top" src="../assets/nortonclasico.jpeg" alt="Card image">
-                      <div class="card-body">
-                        <h4 class="card-title">Norton Clásico</h4>
-                        <p class="card-text">Some example text.</p>
-                      </div>
-                    </div>
-                  <div class="card-back bg-white">
-                    <div class="card-body">
-                        <h3 class="card-title">Norton Clásico</h3>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-outline-secondary">More Info</a>
-                    </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img class="flip_card-img" src="../assets/nortonrosado.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                    <p class="flip_card-text">Norton Malbec Rosado</p>
+                    <input class="flip_card-boton" type="button" value="More Info">
                   </div>
                 </div>
               </div>
-              <div class=>
-                <div class="card borde card-flip h-60" style="width:200px">
-                  <div class="card-front text-white bg-dark">
-                    <img class="card-img-top" src="../assets/privada.jpeg" alt="Card image">
-                      <div class="card-body">
-                        <h4 class="card-title">Cosecha Privada</h4>
-                        <p class="card-text">Some example text.</p>
-                      </div>
-                    </div>
-                  <div class="card-back bg-white">
-                    <div class="card-body">
-                        <h3 class="card-title">Cosecha Privada</h3>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-outline-secondary">More Info</a>
-                    </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img class="flip_card-img" src="../assets/nortonmalbec.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                    <p class="flip_card-text">Norton Malbec Colección</p>
+                    <input class="flip_card-boton" type="button" value="More Info">
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img class="flip_card-img" src="../assets/nortonmerlot.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                    <p class="flip_card-text">Norton Merlot Colección</p>
+                    <input class="flip_card-boton" type="button" value="More Info">
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img class="flip_card-img" src="../assets/nortonblanc.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                    <p class="flip_card-text">Norton Suavignon Blanc</p>
+                    <input class="flip_card-boton" type="button" value="More Info">
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img class="flip_card-img" src="../assets/nortongernot.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                    <p class="flip_card-text">Norton Gernot Langes</p>
+                    <input class="flip_card-boton" type="button" value="More Info">
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img class="flip_card-img" src="../assets/cosecha-tardia-rose.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                    <p class="flip_card-text">Norton Cosecha Tardia Rose</p>
+                    <input class="flip_card-boton" type="button" value="More Info">
                   </div>
                 </div>
               </div>

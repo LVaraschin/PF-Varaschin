@@ -1,3 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  background-color: rgb(158, 147, 86);
+  margin-top: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
 
+/*.header{
+    position: fixed;
+    width: 100%;
+    z-index:99;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.2);
+}*/
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.logo {
+  cursor: pointer;
+}
+.logo img {
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+}
+.logo img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 1700px) {
+  .estanteria {
+    background-image: url(../assets/estanteria.jpeg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+  }
+  .backfotos {
+    background-color: rgb(254, 255, 246);
+  }
+}
+@media screen and (max-width: 1699px) {
+  .estanteria {
+    background-image: url(../assets/madera.jpeg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .galeria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 15%;
+  }
+}
+.galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 6% 25% 17% 25%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-color: rgb(254, 255, 246);
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip_card-text {
+  margin-top: 30%;
+}
+
+.flip_card-boton {
+  margin-top: 10px;
+}
+
+.flip_card-img {
+  width: 200px;
+  height: 200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+
+section {
+  padding-bottom: 25px;
+  padding-top: 90px;
+  min-height: 100vh;
+}
+
+/*formularios*/
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__fieldset {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 70%;
+  color: #e2f1f8;
+  line-height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__fieldset {
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    width: 400px;
+    color: #e2f1f8;
+    line-height: 40px;
+  }
+}
+.campo {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.boton {
+  width: 100px;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(98, 141, 98);
+  line-height: 20px;
+  margin-top: 10%;
+}
+
+/*Titulos*/
+.titulosforms {
+  padding-top: 80px;
+  color: #e2f1f8;
+}
+
+.titulovino {
+  color: black;
+  padding-top: 100px;
+}
+
+.titulos2 {
+  font-family: "Abril FatFace";
+  font-size: 50px;
+  text-align: center;
+  padding-left: 0px;
+  z-index: 3;
+}
+
+@media screen and (min-width: 769px) {
+  .titulovino {
+    color: black;
+    padding-top: 80px;
+  }
+  .titulos2 {
+    font-family: "Abril FatFace";
+    font-size: 50px;
+    text-align: left;
+    padding-left: 10px;
+    z-index: 3;
+    padding-left: 90px;
+  }
+}
+.title {
+  font-family: "Abril FatFace";
+  font-size: 50px;
+  text-align: center;
+  z-index: 3;
+}
+
+/*Texto*/
+.textohistoria, .textohistoria2 {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .textohistoria, .textohistoria2 {
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .textohistoria2 {
+    text-align: right;
+    padding-right: 40px;
+  }
+}
+.textohome {
+  font-family: Abyssinica SIL;
+  font-size: x-large;
+  text-align: center;
+}
+
+/*Imagenes y Backgrounds*/
+.imghistoria {
+  width: 100%;
+  padding: 0 25% 5% 25%;
+}
+
+.imghistoria2 {
+  width: 100%;
+  height: 200px;
+  padding: 0 25% 5% 25%;
+}
+
+@media screen and (min-width: 768px) {
+  .imghistoria {
+    float: right;
+    padding: 0 40px 0 0;
+    width: 300px;
+    height: 170px;
+  }
+  .imghistoria2 {
+    float: left;
+    width: 300px;
+    height: 200px;
+    padding: 0 0 0 40px;
+  }
+}
+.backgroundcontacto {
+  background-image: url(../assets/backcont.jpeg);
+  size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backreservas {
+  background-image: url(../assets/backreservas.jpeg);
+  size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img {
+  width: 100%;
+  height: 20%;
+}
 
 /*# sourceMappingURL=style.css.map */
