@@ -11,25 +11,6 @@ footer {
   width: 100%;
 }
 
-/*.header{
-    position: fixed;
-    width: 100%;
-    z-index:99;
-}
-
-.logo{
-    cursor: pointer;
-}
-
-.logo img{
-    height: 70px;
-    width: auto;
-    transition: all 0.3s;
-}
-
-.logo img:hover{
-    transform: scale(1.2);
-}*/
 .header {
   position: fixed;
   width: 100%;
@@ -81,13 +62,64 @@ footer {
   padding: 6% 25% 17% 25%;
 }
 
+/*.flip-card {
+    background-color: transparent;
+    @include sizes(200px,200px);
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    @include sizes(100%,100%);
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.flip-card-front {
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    @include sizes(100%,100%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background-color: $color-fotos;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+    justify-content: center;
+    position: absolute;
+    @include sizes(100%,100%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-text{
+    margin-top: 30%;
+}
+
+.flip-card-boton{
+    margin-top: 10px;
+}
+
+.flip-card-img{
+    @include sizes(200px,200px);
+
+}*/
 .flip-card {
   background-color: transparent;
   width: 200px;
   height: 200px;
   perspective: 1000px;
 }
-
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -97,11 +129,9 @@ footer {
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
 .flip-card-front {
   background-color: transparent;
   color: black;
@@ -111,7 +141,6 @@ footer {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
 .flip-card-back {
   background-color: rgb(254, 255, 246);
   color: rgb(0, 0, 0);
@@ -123,80 +152,71 @@ footer {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
-.flip_card-text {
+.flip-card-text {
   margin-top: 30%;
 }
-
-.flip_card-boton {
+.flip-card-boton {
   margin-top: 10px;
 }
-
-.flip_card-img {
+.flip-card-img {
   width: 200px;
   height: 200px;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Nunito", sans-serif;
-  font-size: 20px;
+.imghistoria {
+  width: 100%;
+  padding: 0 25% 5% 25%;
 }
 
-section {
-  padding-bottom: 25px;
-  padding-top: 90px;
-  min-height: 100vh;
-}
-
-/*formularios*/
-.forms {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact__fieldset {
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  width: 70%;
-  color: #e2f1f8;
-  line-height: 40px;
+.imghistoria2 {
+  width: 100%;
+  height: 200px;
+  padding: 0 25% 5% 25%;
 }
 
 @media screen and (min-width: 768px) {
-  .contact__fieldset {
-    text-align: center;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    width: 400px;
-    color: #e2f1f8;
-    line-height: 40px;
+  .imghistoria {
+    float: right;
+    padding: 0 40px 0 0;
+    width: 300px;
+    height: 170px;
+  }
+  .imghistoria2 {
+    float: left;
+    width: 300px;
+    height: 200px;
+    padding: 0 0 0 40px;
   }
 }
-.campo {
+.backgroundcontacto {
+  background-image: url(../assets/backcont.jpeg);
+  size: 100%;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.backreservas {
+  background-image: url(../assets/backreservas.jpeg);
+  size: 100%;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.img {
   width: 100%;
-  padding: 16px 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: #f1f1f1;
+  height: 20%;
 }
 
-.boton {
-  width: 100px;
-  padding: 16px 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: rgb(98, 141, 98);
-  line-height: 20px;
-  margin-top: 10%;
+.backhistoria {
+  background-image: url(../assets/imghistoria.jpg);
+  size: 100%;
+  background-repeat: repeat;
+  background-size: cover;
 }
 
-/*Titulos*/
 .titulosforms {
   padding-top: 80px;
-  color: #e2f1f8;
+  color: white;
 }
 
 .titulovino {
@@ -233,9 +253,9 @@ section {
   z-index: 3;
 }
 
-/*Texto*/
 .textohistoria, .textohistoria2 {
   text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (min-width: 768px) {
@@ -243,10 +263,12 @@ section {
     text-align: left;
     padding-left: 40px;
     padding-right: 40px;
+    color: rgb(255, 255, 255);
   }
   .textohistoria2 {
     text-align: right;
     padding-right: 40px;
+    color: rgb(255, 255, 255);
   }
 }
 .textohome {
@@ -255,49 +277,59 @@ section {
   text-align: center;
 }
 
-/*Imagenes y Backgrounds*/
-.imghistoria {
-  width: 100%;
-  padding: 0 25% 5% 25%;
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.imghistoria2 {
-  width: 100%;
-  height: 200px;
-  padding: 0 25% 5% 25%;
+.contact__fieldset {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 70%;
+  color: white;
+  line-height: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .imghistoria {
-    float: right;
-    padding: 0 40px 0 0;
-    width: 300px;
-    height: 170px;
-  }
-  .imghistoria2 {
-    float: left;
-    width: 300px;
-    height: 200px;
-    padding: 0 0 0 40px;
+  .contact__fieldset {
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    width: 400px;
+    color: white;
+    line-height: 40px;
   }
 }
-.backgroundcontacto {
-  background-image: url(../assets/backcont.jpeg);
-  size: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.backreservas {
-  background-image: url(../assets/backreservas.jpeg);
-  size: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img {
+.campo {
   width: 100%;
-  height: 20%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.boton {
+  width: 100px;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(98, 141, 98);
+  line-height: 20px;
+  margin-top: 10%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+
+section {
+  padding-bottom: 25px;
+  padding-top: 90px;
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */

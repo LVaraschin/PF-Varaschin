@@ -1,0 +1,40 @@
+.imghistoria{ 
+    width: 100%;
+    padding: 0 25% 5% 25%;
+}
+.imghistoria2 {
+    @include sizes(100%,200px);
+    padding: 0 25% 5% 25%;
+}
+@media screen and (min-width: 768px){
+.imghistoria{
+    float: right;
+    padding: 0 40px 0 0;
+    @include sizes(300px,170px);
+}
+
+.imghistoria2 {
+    float: left;
+    @include sizes(300px,200px);
+    padding: 0 0 0 40px;
+}
+}
+
+.backgroundcontacto{
+    background-image: url(../assets/backcont.jpeg);
+    @include backgrounds
+}
+
+.backreservas{
+    background-image: url(../assets/backreservas.jpeg);
+    @include backgrounds
+}
+
+.img{
+    @include sizes(100%,20%);
+}
+
+.backhistoria {
+    background-image: url(../assets/imghistoria.jpg);
+    @include backgrounds;
+}
