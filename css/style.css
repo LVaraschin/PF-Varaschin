@@ -1,14 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap"); /*footer {
-    padding: 20px;
-    text-align: center;
-    background: white;
-    background-color: rgb(158, 147, 86);
-    margin-top: 20px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
 .footer-basic {
   padding: 40px 0;
   background-color: #302f2f;
